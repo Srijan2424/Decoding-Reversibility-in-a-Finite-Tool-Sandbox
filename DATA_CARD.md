@@ -1,0 +1,13 @@
+# Sandbox candidate v2
+
+1,200 synthetic pairs: 20 context families, six substantive candidate verbs, three recovery depths, three conditions; plus 120 read-state no-ops. Labels: 480 reversible, 360 partial, 360 irreversible at horizon 3. Horizon variants are not counted as additional examples. 90% belong to matched action triplets. Partial examples include recovery fees and older content. All tools operate on dictionaries in memory.
+
+Exact labels use whole-state equality. Partial equality permits only an older target content and/or reduced wallet; this is an explicit benchmark definition, not a universal definition of partial reversibility. BFS exhausts the complete available finite action list to the horizon for negative labels, and all positive witnesses are replayed. Inverse tools are intentionally restricted. These restrictions are visible in prompts; general real-world undo tools could change labels.
+
+Three splits group ALL verbs, conditions and recovery lengths of each context together. Each split has 12 training, four validation and four test contexts: 60/20/20 percent. Do not tune on test outcomes. New context names do not establish mechanism independence from development: recovery mechanics and prompt conventions share the development design. These are in-distribution held-out contexts, not a novel-mechanism test.
+
+This is a CANDIDATE, not the finished research dataset. ScienceWorld is absent; the combined target remains at least 2,000 pairs. Text and mechanics remain templated. Explicit recovery fields can make classification easy. Six substantive verbs are still a small action vocabulary, and random verb controls must report imbalance and domain confounding. Read-state examples supply a non-minimal subset but always have the reversible label; minimal-only vs all comparisons must disclose this composition.
+
+The 100-row blinded packet is a sandbox-only quality audit, NOT a random sample of the final two-environment dataset. The final 100 must be selected from the frozen combined corpus. Do not claim that this provisional audit satisfies that requirement. Keep automatic labels, witnesses and mapping files away from annotators. Human/AI original labels must be preserved before adjudication. Professor has permitted AI as second annotator for now; report human-AI rather than human-human agreement. Use an open-weight model with a recorded revision and prompt. A model also evaluated in the study is not an independent human judgment; disclose potential dependence.
+
+No model results have been generated on this candidate. All failures and revisions must remain logged. New generation stages must use new output directories.

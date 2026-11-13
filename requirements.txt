@@ -1,0 +1,11 @@
+# Observed Colab model/probe versions, not a portable clean-install lock.
+# Keep a working CUDA-enabled torch installation in Colab; do not blindly replace it.
+torch==2.11.0
+transformers==5.18.0
+accelerate==1.15.0
+bitsandbytes==0.50.2
+numpy==2.1.3
+scikit-learn==1.6.1
+# Optional ScienceWorld diagnostics (Java required):
+# git+https://github.com/allenai/ScienceWorld.git@e8216d6044e8e39be9fcb185e3b2dfb602584b52
+# Plotting scripts also use matplotlib/pandas/scipy; exact versions not established.
