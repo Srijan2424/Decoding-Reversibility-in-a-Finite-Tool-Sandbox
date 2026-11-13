@@ -25,3 +25,7 @@ Upload a Python script to Colab and execute it using `%run /content/SCRIPT_NAME.
 - Earlier scripts/notebooks: development pilots and historical attempts, retained for provenance.
 
 `requirements.txt` records observed versions, not a tested portable installation lock. Preserve a working CUDA-enabled PyTorch installation rather than replacing it blindly. ScienceWorld needs Java and the pinned revision listed in that file. Experiments need their generated predecessor outputs; this code-only repository does not contain saved results.
+
+## 13 November continuation
+
+Scripts 43 and 44 prepare the missing same-example RQ2 experiment and audit the pinned ScienceWorld state export. The RQ2 generation phase still needs a GPU. No new RQ2 model scores or ScienceWorld labels are claimed. See `docs/RESEARCH_COMPLETION_PLAN.md`. Run helper checks with `python3 code/test_rq2_helpers.py`. Prepared query packets and audit outputs remain in the separate local update, not this code-only repository.
