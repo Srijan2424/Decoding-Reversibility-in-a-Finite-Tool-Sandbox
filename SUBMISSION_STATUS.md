@@ -1,22 +1,11 @@
-# Submission status - 9 November 2026
+# Project status, 15 November 2026
 
-Srijan Chopra | Advanced Deep Neural Network
+Srijan Chopra, Advanced Deep Neural Network.
 
-## Included
-Academic-style report; editable slides and slide PDF; scripted two-task demo and tested output; code; 1,200-example dataset and grouped splits; original supplied results, annotation records, behaviour task definitions and configs; data card; contribution/AI statement; observed requirements; file hashes; local verification script.
-
-## Experimental requirements still incomplete
-- Validated ScienceWorld labelled dataset and full three-step recovery study.
-- Two-way cross-environment probing/transfer and second-environment model results.
-- At least 2,000 labelled pairs across the two environments (1,200 accepted sandbox examples included).
-- Combined-environment annotation audit (existing 100 examples are sandbox-only, with weak agreement).
-- Full same-example stated-answer versus probe RQ2 on the main dataset. Paired behaviour knowledge is a separate measurement.
-- Original extended controls were replaced with disclosed reduced controls; not the originally specified full-search procedure.
-
-The report uses a conventional two-column academic layout, not an official ACL or IEEE class/template. The archive is assembled for submission of the completed work; it does not certify full rubric compliance.
-
-## Practical tasks remaining for the student
-Read and understand the report and AI disclosure; rehearse the 15-minute presentation and two-task demonstration; verify the course's upload-size/template rules; upload this ZIP. No further evidence upload is requested for assembly.
-
-## Reproducibility limits
-Activations and model weights are not bundled. The notebooks document extraction/regeneration; original activation storage remains in Drive. The observed requirements file is not a tested portable lock. No live model generation was rerun during packaging. The included standard-library dataset verifier and demo were run locally. Archived model output presence does not independently validate all model computations.
+- **RQ1:** Layer-wise probes, controls and reduced ablations on 1,200 sandbox examples. Three original scenario-grouped splits are retained. The extended controls were reduced after the main test had been run.
+- **RQ2:** Qwen and Llama each answered 1,200 same-example sandbox queries. Locally rescored answers matched the Colab exports. Three-class stated accuracy averaged 23.8% and 44.4%, respectively. There were 513 invalid Qwen responses and zero invalid Llama responses.
+- **RQ3:** Paired tool behaviour and stated knowledge on a separate 60-pair dataset. The presentation demo replays actual archived Qwen actions.
+- **ScienceWorld:** The user approved a reduced protocol. Across 12 simulator runs there were three distinct kitchen state–action pairs, with one partial and two irreversible labels. The comparison is limited to the declared commands and physical fields.
+- **Annotation:** The 12-case follow-up covers both environments. Agreement counts are descriptive. The ScienceWorld outcomes had been discussed before the human exercise. Qwen is also one of the evaluated models.
+- **Transfer:** Feasibility audit completed. Both transfer directions remain unrun. One ScienceWorld scenario family and zero exact-recovery cases prevent a held-out evaluation. Dataset expansion was declined.
+- **Original scope:** The full ScienceWorld benchmark, 2,000-example combined target, bidirectional transfer and a full independent combined annotation audit remain unmet.

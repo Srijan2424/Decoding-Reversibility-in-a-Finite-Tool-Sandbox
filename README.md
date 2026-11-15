@@ -26,6 +26,9 @@ Upload a Python script to Colab and execute it using `%run /content/SCRIPT_NAME.
 
 `requirements.txt` records observed versions, not a tested portable installation lock. Preserve a working CUDA-enabled PyTorch installation rather than replacing it blindly. ScienceWorld needs Java and the pinned revision listed in that file. Experiments need their generated predecessor outputs; this code-only repository does not contain saved results.
 
-## 13 November continuation
+## Follow-up experiments
 
-Scripts 43 and 44 prepare the missing same-example RQ2 experiment and audit the pinned ScienceWorld state export. The RQ2 generation phase still needs a GPU. No new RQ2 model scores or ScienceWorld labels are claimed. See `docs/RESEARCH_COMPLETION_PLAN.md`. Run helper checks with `python3 code/test_rq2_helpers.py`. Prepared query packets and audit outputs remain in the separate local update, not this code-only repository.
+- Script 43 runs and scores the sandbox same-example RQ2 comparison. Both model runs have been completed. The raw outputs and probe evidence are available in the course submission.
+- Scripts 44–50 record the ScienceWorld feasibility checks. Scripts 51–52 generate and audit the reduced benchmark. Run them together in the code directory with the pinned ScienceWorld installation. See docs/SCIENCEWORLD_RESTRICTED_PROTOCOL.md for the exact scope.
+- task3_qwen_colab.ipynb annotates the separate blinded JSON packet supplied with the course submission. The notebook requires a GPU and preserves its input hash with the responses.
+- transfer_preflight.py audits class and group coverage before any transfer fitting. See docs/TRANSFER_FEASIBILITY.md and SUBMISSION_STATUS.md for the decision to stop at feasibility.
